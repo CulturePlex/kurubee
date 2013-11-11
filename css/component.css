@@ -21,7 +21,7 @@
 .hi-icon {
 	display: inline-block;
 	font-size: 0px;
-	cursor: pointer;
+	/*cursor: pointer;*/
 	margin: 10px 0px;
 	width: 140px;
 	height: 140px;
@@ -39,8 +39,8 @@
 	height: 100%;
 	border-radius: 50%;
 	content: '';
-	-webkit-box-sizing: content-box; 
-	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -185,6 +185,18 @@
 	color: #ddd;
 }
 
+.no-touch .hi-icon-effect-9b .hi-icon-orange:hover {
+	color: #ff7f00;
+}
+
+.no-touch .hi-icon-effect-9b .hi-icon-blue:hover {
+	color: #001999;
+}
+
+.no-touch .hi-icon-effect-9b .hi-icon-red:hover {
+	color: #990000;
+}
+
 
 /* SLIDER */
 
@@ -198,7 +210,7 @@
 			overflow: hidden;
 			list-style: none;
 		}
-		
+
 				#s1{
 					padding: 6px;
 					background: #333;
@@ -211,7 +223,7 @@
 					cursor: pointer;
 					z-index: 999;
 				}
-				
+
 				#s2{
 					padding: 6px;
 					background: #333;
@@ -224,7 +236,7 @@
 					cursor: pointer;
 					z-index: 999;
 				}
-				
+
 				#s3{
 					padding: 6px;
 					background: #333;
@@ -237,7 +249,7 @@
 					cursor: pointer;
 					z-index: 999;
 				}
-				
+
 				#s4{
 					padding: 6px;
 					background: #333;
@@ -250,9 +262,9 @@
 					cursor: pointer;
 					z-index: 999;
 				}
-				
+
 				#s1:hover, #s2:hover, #s3:hover, #s4:hover{ opacity: 1;}
-				
+
 			.inner-wrapper{
 				width: 100%;
 				height: 100%;
@@ -263,17 +275,17 @@
 				overflow: hidden;
 			}
 				.control{ display: none;}
-				
+
 				#Slide1:checked ~ .overflow-wrapper{ margin-left: 0%; }
 				#Slide2:checked ~ .overflow-wrapper{ margin-left: -100%; }
 				#Slide3:checked ~ .overflow-wrapper{ margin-left: -200%; }
 				#Slide4:checked ~ .overflow-wrapper{ margin-left: -300%; }
-				
+
 				#Slide1:checked + #s1 { opacity: 1; }
 				#Slide2:checked + #s2 { opacity: 1; }
 				#Slide3:checked + #s3 { opacity: 1; }
 				#Slide4:checked + #s4 { opacity: 1; }
-				
+
 			.overflow-wrapper{
 				width: 400%;
 				height: 100%;
@@ -287,7 +299,7 @@
 				-o-transition: all 0.3s ease-in-out;
 				transition: all 0.3s ease-in-out;
 			}
-			
+
 				.slide img{
 					width: 25%;
 					float: left;
@@ -366,15 +378,15 @@ css3-container{
 	padding-bottom: 45px;
 	padding-top:25px;
 	}
-	
+
 	.testimonialblock {
-		padding-bottom: 60px;		
+		padding-bottom: 60px;
 	}
 
 	.bottompad {
 		line-height: 65px;
 	}
-	
+
 .flex-direction-nav .flex-next {background-position: -56px 0; right: 0px }
 .flex-direction-nav .flex-prev {background-position: -3px -1px; left: 0px;}
 .flexslider:hover .flex-next {opacity: 0.8; right: 0px;}
@@ -382,14 +394,14 @@ css3-container{
 
 .testblock:hover .flex-next {opacity: 0.8; right: 0px;}
 .testblock:hover .flex-prev {opacity: 0.8; left: 0px;}
-}	
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
-	.flex-direction-nav a { top: 45%;}	
+	.flex-direction-nav a { top: 45%;}
 }
 
 @media (max-width: 480px) {
-	.flex-direction-nav a { top: 40%;}	
+	.flex-direction-nav a { top: 40%;}
 }
 
 
@@ -405,7 +417,7 @@ css3-container{
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 
- 
+
 /* Browser Resets */
 .flex-container a:active,
 .flexslider a:active,
@@ -413,18 +425,18 @@ css3-container{
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
 /* FlexSlider Necessary Styles
-*********************************/ 
+*********************************/
 .flexslider {margin: 0; padding: 0;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block; border-radius:50%}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block;} 
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
 * html .slides {height: 1%;}
 
 /* No JavaScript Fallback */
