@@ -103,7 +103,7 @@ $('#navigate-to').click(function(e){
 
 		var form_data = $(this).serialize();
 
-		if (validateEmail($('input[name=email]').attr('value')))
+		if (validateEmail($('input[name=entry.1721425375]').attr('value')))
 		{
 
 			if (typeof ajax_form !== "undefined" && ajax_form === true)
