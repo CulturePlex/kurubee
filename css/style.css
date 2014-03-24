@@ -825,3 +825,13 @@ and (max-width : 1024px) {
 
 }
 
+iframe#course-iframe {
+    width: 279px;
+    height: 517px;
+    z-index: 9999;
+    position: relative;
+    border: 1px;
+    display: block;
+    margin-left: 56px;
+    padding-top: 114px;
+}
